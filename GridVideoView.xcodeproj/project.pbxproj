@@ -14,6 +14,8 @@
 		7B98398029A12A0C00DD3060 /* GridVideoViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98397F29A12A0C00DD3060 /* GridVideoViewTests.swift */; };
 		7B98398A29A12A0C00DD3060 /* GridVideoViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98398929A12A0C00DD3060 /* GridVideoViewUITests.swift */; };
 		7B98398C29A12A0C00DD3060 /* GridVideoViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98398B29A12A0C00DD3060 /* GridVideoViewUITestsLaunchTests.swift */; };
+		7BBF513129A144B100DD0E65 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF513029A144B100DD0E65 /* Video.swift */; };
+		7BBF513829A154B400DD0E65 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF513729A154B400DD0E65 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,13 @@
 		7B98398529A12A0C00DD3060 /* GridVideoViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridVideoViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B98398929A12A0C00DD3060 /* GridVideoViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridVideoViewUITests.swift; sourceTree = "<group>"; };
 		7B98398B29A12A0C00DD3060 /* GridVideoViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridVideoViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BBF513029A144B100DD0E65 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		7BBF513229A153B000DD0E65 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		7BBF513329A1546100DD0E65 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		7BBF513429A1546100DD0E65 /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
+		7BBF513529A1546100DD0E65 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		7BBF513629A1546100DD0E65 /* video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video5.mp4; sourceTree = "<group>"; };
+		7BBF513729A154B400DD0E65 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,9 @@
 		7B98396D29A12A0900DD3060 /* GridVideoView */ = {
 			isa = PBXGroup;
 			children = (
+				7BBF512F29A1448A00DD0E65 /* View */,
+				7BBF512E29A1448000DD0E65 /* Model */,
+				7BBF512C29A1445B00DD0E65 /* Video */,
 				7B98396E29A12A0900DD3060 /* GridVideoViewApp.swift */,
 				7B98397029A12A0900DD3060 /* ContentView.swift */,
 				7B98397229A12A0B00DD3060 /* Assets.xcassets */,
@@ -125,6 +137,34 @@
 				7B98398B29A12A0C00DD3060 /* GridVideoViewUITestsLaunchTests.swift */,
 			);
 			path = GridVideoViewUITests;
+			sourceTree = "<group>";
+		};
+		7BBF512C29A1445B00DD0E65 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF513329A1546100DD0E65 /* video2.mp4 */,
+				7BBF513529A1546100DD0E65 /* video3.mp4 */,
+				7BBF513429A1546100DD0E65 /* video4.mp4 */,
+				7BBF513629A1546100DD0E65 /* video5.mp4 */,
+				7BBF513229A153B000DD0E65 /* video1.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		7BBF512E29A1448000DD0E65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF513029A144B100DD0E65 /* Video.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BBF512F29A1448A00DD0E65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF513729A154B400DD0E65 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B98397129A12A0900DD3060 /* ContentView.swift in Sources */,
+				7BBF513129A144B100DD0E65 /* Video.swift in Sources */,
+				7BBF513829A154B400DD0E65 /* Home.swift in Sources */,
 				7B98396F29A12A0900DD3060 /* GridVideoViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
