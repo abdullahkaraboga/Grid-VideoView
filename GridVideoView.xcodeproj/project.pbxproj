@@ -16,6 +16,8 @@
 		7B98398C29A12A0C00DD3060 /* GridVideoViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B98398B29A12A0C00DD3060 /* GridVideoViewUITestsLaunchTests.swift */; };
 		7BBF513129A144B100DD0E65 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF513029A144B100DD0E65 /* Video.swift */; };
 		7BBF513829A154B400DD0E65 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF513729A154B400DD0E65 /* Home.swift */; };
+		7BBF513A29A1684F00DD0E65 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF513929A1684F00DD0E65 /* VideoPlayerView.swift */; };
+		7BBF513D29A1714000DD0E65 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBF513C29A1714000DD0E65 /* VideoPlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		7BBF513529A1546100DD0E65 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 		7BBF513629A1546100DD0E65 /* video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video5.mp4; sourceTree = "<group>"; };
 		7BBF513729A154B400DD0E65 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7BBF513929A1684F00DD0E65 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		7BBF513C29A1714000DD0E65 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		7B98396D29A12A0900DD3060 /* GridVideoView */ = {
 			isa = PBXGroup;
 			children = (
+				7BBF513B29A1712100DD0E65 /* ViewModel */,
 				7BBF512F29A1448A00DD0E65 /* View */,
 				7BBF512E29A1448000DD0E65 /* Model */,
 				7BBF512C29A1445B00DD0E65 /* Video */,
@@ -163,8 +168,17 @@
 			isa = PBXGroup;
 			children = (
 				7BBF513729A154B400DD0E65 /* Home.swift */,
+				7BBF513929A1684F00DD0E65 /* VideoPlayerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7BBF513B29A1712100DD0E65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BBF513C29A1714000DD0E65 /* VideoPlayerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +315,8 @@
 				7BBF513129A144B100DD0E65 /* Video.swift in Sources */,
 				7BBF513829A154B400DD0E65 /* Home.swift in Sources */,
 				7B98396F29A12A0900DD3060 /* GridVideoViewApp.swift in Sources */,
+				7BBF513D29A1714000DD0E65 /* VideoPlayerViewModel.swift in Sources */,
+				7BBF513A29A1684F00DD0E65 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
