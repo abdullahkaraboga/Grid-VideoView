@@ -62,13 +62,14 @@ struct Home: View {
                             VideoPlayerView(player: video.player)
                                 .cornerRadius(15)
                                 .matchedGeometryEffect(id: video.id, in: animation)
-                                .frame(height: 280)
+                                .scaleEffect(playerModel.showPlayer && playerModel.selectedVideo.id == video.id ? playerModel.scale : 1)
+                                .frame(width: (UIScreen.main.bounds.width - 45) / 2, height: 280)
                                 .onTapGesture {
                                 withAnimation {
                                     playerModel.selectedVideo = video
                                     playerModel.showPlayer = true
                                 }
-                            }
+                                }.zIndex(0)
                         }
                     })
                         .padding()
@@ -78,6 +79,8 @@ struct Home: View {
 
             if playerModel.showPlayer {
                 VideoPlayerView(player: playerModel.selectedVideo.player)
+                    .cornerRadius(15)
+                    .matchedGeometryEffect(id: playerModel.selectedVideo.id, in: animation)
                     .offset(playerModel.offset)
                     .scaleEffect(playerModel.scale)
                     .gesture(DragGesture().onChanged(onChanged(value:)).onEnded(onEnd(value:)))
@@ -85,6 +88,7 @@ struct Home: View {
                     playerModel.selectedVideo.player.play()
                 }
                     .ignoresSafeArea(.all, edges: .all)
+                    .zIndex(3)
             }
         }
     }
@@ -109,7 +113,14 @@ struct Home: View {
     func onEnd(value: DragGesture.Value) {
 
         withAnimation(.default) {
+
+            if value.translation.height > 300 {
+                playerModel.selectedVideo.player.pause()
+                playerModel.showPlayer = false
+            }
+
             playerModel.offset = .zero
+            playerModel.scale = 1
         }
 
     }
@@ -117,6 +128,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        ContentView()
     }
 }
